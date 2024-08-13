@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useDispatch } from "react-redux";
-import { addItem , removeItem } from "@/app/(slice)/slice";
+import { addItem , removeItem } from "../../(slice)/slice";
 
 const Card = ({ id, image, title, price, quantity }) => {
   const dispatch = useDispatch();
