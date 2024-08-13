@@ -1,12 +1,19 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-const page = () => {
+
+const card = () => {
     const count = useSelector((store) => store.cart.cartItems);
   return (
-    <div className=' bg-purple-300'>
-        
+    <div>
+        <div>
+
+        </div>
+        <div>
+            
+        </div>
     </div>
+    
   )
 }
 
-export default page
+export default card

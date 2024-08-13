@@ -6,11 +6,12 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from 'react-redux'
 
-const Card = ({ image, title, price }) => {
+const Card = ({ image, title, price , id }) => {
   const count = useSelector((store) => store.cart.cartItems);
+  const data = { image, title, price, quantity: 1 , id }
   const dispatch = useDispatch();
   const handleAddItemCart = () => {
-    dispatch(addItem({ image, title, price, quantity: 1 }));
+    dispatch(addItem(data));
   };
   return (
     <div className="bg-white rounded-md border-black flex flex-col items-start p-5 shadow-xl space-x-5 space-y-2">
