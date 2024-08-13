@@ -1,6 +1,6 @@
 "use client";
 
-import { addItem } from "@/app/(slice)/slice";
+import { addItem } from "../../(slice)/slice";
 import Image from "next/image";
 import React from "react";
 import { useDispatch } from "react-redux";
