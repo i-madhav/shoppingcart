@@ -9,7 +9,6 @@ const layout = ({ children }) => {
   return (
     <div className=" bg-purple-300">
       <Provider store={store}>
-        <Navbar />
         {children}
       </Provider>
     </div>
